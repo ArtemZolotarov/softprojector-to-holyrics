@@ -136,7 +136,7 @@
         if (song.number) {
           fileNameBase = `${song.number} — ${song.title}`;
         }
-        const fileName = `${song.songbook}/${fileNameBase}${useFirstRow ? ` (${firstRow})` : ""}.txt`;
+        const fileName = `${song.songbook}/${fileNameBase}.txt`;
         // --- REFACTORED LINES END HERE ---
   
         zip.file(fileName, song.text);
@@ -236,3 +236,4 @@
 </body>
 
 </html>
+
